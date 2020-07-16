@@ -8,7 +8,7 @@ Using React to create a single page application of the fib sequence with user in
 ``` docker build --tag client . ```
 
 ## Run the docker container with forwarding of port to port 300
-```docker run --publish 3000:3000 --detach client```
+```docker run -it -p 80:3000  client```
 
 ## Quit the contianer after finish
 ``` docker stop client```
